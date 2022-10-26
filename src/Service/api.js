@@ -12,8 +12,8 @@ export const getPosts = async (id) => {
   }
 }
 
-export const addPost = async (post) => {
-  return await axios.post(`${postsUrl}${app_id}`, rent)
+export const createPost = async (post) => {
+  return await axios.post(`${postsUrl}${app_id}`, post)
 }
 
 export const deletePost = async (id) => {
